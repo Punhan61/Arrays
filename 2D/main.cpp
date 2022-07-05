@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 #define tab "\t"
 #define delimitr "\n-----------------\n"
@@ -9,8 +9,8 @@ void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef BASICS
-	const int ROWS = 8;// количество строк
-	const int COLS = 5;// количество элементов строки(столбцов)
+	const int ROWS = 8;// РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє
+	const int COLS = 5;// РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЂРѕРєРё(СЃС‚РѕР»Р±С†РѕРІ)
 	int arr[ROWS][COLS] =
 	{
 		{1,2,3},
@@ -41,7 +41,7 @@ void main()
 			B[i][j] = rand() % 10;
 		}
 	}
-	// выводим матрицу на экран
+	// РІС‹РІРѕРґРёРј РјР°С‚СЂРёС†Сѓ РЅР° СЌРєСЂР°РЅ
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -62,7 +62,7 @@ void main()
 	cout << delimitr << endl;
 	//      Matrix addition
 
-	int C[ROWS][COLS]{};//матрица результат
+	int C[ROWS][COLS]{};//РјР°С‚СЂРёС†Р° СЂРµР·СѓР»СЊС‚Р°С‚
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
