@@ -3,7 +3,7 @@
 using namespace std;
 #define tab "\t"
 //#define UNIQUE_1
-//#define UNIQUE_2
+#define UNIQUE_2
 void main()
 {
 	setlocale(LC_ALL, "");
@@ -62,33 +62,5 @@ void main()
 	}
 #endif // UNIQUE_2
 
-	//Задача. Сдвиг элементов массива в право:
-
-	//Вывод исходного массива:
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << tab;
-	}
-	cout << endl;
-
-	//Сдвиг массива в право:
-	int shift;
-	cout << "На сколько элементов сдвинуть?: "; cin >> shift;
-	for (int i = 0; i < shift; i++)
-	{                   // Не могу разобраться в коде,чтобы сдвиг шел в право
-		int buffer = arr[0];
-		for (int i = 0; i < n; i++)
-		{                             
-		arr[i] = arr[i + 1];
-		}
-	arr[n - 1] = buffer;
-	}
-	cout << endl;
-
-	//Вывод сдвинутого массива:
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << tab;
-	}
-	cout << endl;
+	
 }
